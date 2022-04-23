@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 python3 runner.py \
-  --config ~/workspace/fluxstate/warlists/l7_cf.lst \
+  --config https://raw.githubusercontent.com/FluxState/warlists/main/l7_cf.lst \
   --debug \
   --http-methods CFB GSB \
   --threads 20
