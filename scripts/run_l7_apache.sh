@@ -5,4 +5,4 @@ python3 runner.py \
   --debug \
   --http-methods APACHE GSB \
   --threads 32 \
-  --vpn 100
+  --vpn 90
