@@ -7,10 +7,8 @@ http://novorossy.ru
 http://ruspravda.info
 https://antifashist.com
 https://antimaydan.info
-https://api.corr.life/public/regions/lookup
 https://api.papajohns.ru/slider/list
 https://api.pikabu.ru
-https://api.riafan.ru
 https://argumenti.ru
 https://aurora.network
 https://belarus.mid.ru
@@ -27,12 +25,12 @@ https://cross.m24.ru/covid/frontend/web/site/rus
 https://dan-news.info
 https://delonghi.ru
 https://dni.ru
+https://social.dni.ru
 https://dnmchs.ru
 https://dnr24.com
 https://dnr24.su
 https://dnr-life.ru
 https://dnr-pravda.ru
-https://donbasstoday.ru
 https://dontimes.ru
 https://ecco.ru
 https://evening-crimea.com
@@ -96,6 +94,8 @@ https://president.gov.by/ru
 https://rabota.rambler. ru
 https://rcm.rambler.ru
 https://rg.ru
+https://api.riafan.ru
+https://mt.riafan.ru
 https://rossaprimavera.ru
 https://vcs.rostec.ru
 https://rueconomics.ru
@@ -113,8 +113,6 @@ https://stream.1tv.ru/api/playlist/1tvch-v1_as_array.json
 https://subway.ru
 https://svpressa.ru
 https://syrianfinance.gov.sy
-https://tass.ru
-https://tass.ru/userApi/getNewsFeed
 https://taurica.net
 https://tehnowar.ru
 https://therussophile.org
@@ -147,7 +145,6 @@ https://www.m24.ru
 https://www.metronews.ru
 https://www.mid.ru
 https://www.minfinchr.ru
-https://www.mirage.ru
 https://www.mk-kalm.ru
 https://www.nakanune.ru
 https://www.newc.info
@@ -156,9 +153,7 @@ https://www.rambler.ru/api/v4/personalized
 https://zoomdecorate.rambler.ru
 https://www.readmetro.com
 https://www.ritmeurasia.org
-https://www.rw.by
 https://www.strategic-culture.org
-https://www.vedomosti.ru
 https://zanamipravda.ru
 https://zavtra.ru
 http://www.fsb.ru
