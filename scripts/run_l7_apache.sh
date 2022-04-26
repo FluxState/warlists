@@ -4,5 +4,5 @@ python3 runner.py \
   --config https://raw.githubusercontent.com/FluxState/warlists/main/l7_apache.lst \
   --debug \
   --http-methods APACHE GSB \
-  --threads 68 \
+  --threads 64 \
   --vpn 90
