@@ -7,4 +7,4 @@ python3 runner.py \
   --debug \
   --http-methods APACHE GSB \
   --threads 64 \
-  --vpn 90
+  --vpn 100
