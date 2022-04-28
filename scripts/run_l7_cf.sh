@@ -5,6 +5,6 @@
 python3 runner.py \
   --config https://raw.githubusercontent.com/FluxState/warlists/main/l7_cf.lst \
   --debug \
-  --http-methods CFB GSB \
-  --threads 56 \
-  --vpn 100
+  --http-methods CFB CDBUAM GSB \
+  --threads 168 \
+  --vpn 90
