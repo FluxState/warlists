@@ -7,4 +7,4 @@ python3 runner.py \
   --debug \
   --http-methods GET STRESS \
   --threads 496 \
-  --vpn 50
+  --vpn
