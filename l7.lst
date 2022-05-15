@@ -1,8 +1,7 @@
-https://stream.1tv.ru/api/playlist/1tvch-v1_as_array.json
 https://47news.ru
 https://www.afanasy.biz
 https://ames.ru
-https://anews.com/tag/novosti/500/
+https://anews.com
 https://argumenti.ru
 https://aurora.network
 https://www.belnovosti.by
@@ -14,8 +13,9 @@ https://burgerkingrus.ru/api-web-front/api/v3/restaurant/list
 https://mic.burgerking.ru/mifs/user/login.jsp
 https://sd.burgerking.ru/HEAT/SaaSExternalSessionRenew.aspx
 https://buzina.org
-https://www.chechnya.online
 https://www.c-inform.info
+https://www.chechnya.online
+https://cherkessk09.ru
 https://www.colins.ru
 https://compromat.group
 https://compromat.group/engine/ajax/checkViews.php
@@ -26,7 +26,6 @@ https://social.dni.ru
 https://dnmchs.ru
 https://dnr24.com
 https://dnr-pravda.ru
-https://www.xn----7sbbaeo6behzdm8c.xn--p1ai
 https://dontimes.ru
 https://ecco.ru
 https://ecco-online.ru
@@ -55,7 +54,6 @@ https://hardrockcafespb.ru
 https://hoffmann-group.ru/
 https://infobrics.org
 https://infobrics.org/api/business/
-https://infox.sg
 https://jpgazeta.ru
 https://www.laredoute.ru
 https://www.laredoute.ru/producthelper/getproducts.aspx
@@ -66,7 +64,6 @@ https://life.ru
 https://lugansk-online.su
 https://lug-info.com
 https://www.m24.ru
-https://cross.m24.ru/covid/frontend/web/site/rus
 https://mail.ru
 https://ad.mail.ru/adp/
 https://recostream.go.mail.ru
@@ -115,7 +112,6 @@ https://pravdoryb.info
 https://projahn-rus.ru
 https://projahn-russia.ru
 https://projahn.su
-https://www.raiffeisen.ru
 https://www.raiffeisen.ru/promo/form/dictionary/branch.json
 https://ipoteka.raiffeisen.ru/signin
 https://partner.ipoteka.raiffeisen.ru/kclogin
@@ -127,19 +123,16 @@ https://id.rambler.ru/login-20/login
 https://news.rambler.ru
 https://peroxide.rambler.ru/v1/comments/clusters/
 https://rcm.rambler.ru
-https://zoomdecorate.rambler.ru
 https://rg.ru
 https://api.riafan.ru
 https://mt.riafan.ru/blog/latest
 https://www.ritmeurasia.org/rubric--politika-3
 https://rossaprimavera.ru/feed/news
-https://vcs.rostec.ru
 https://rusonline.org
 https://sbarro-pizza.ru
 https://sbdr.ru
 https://sbdr.ru/api/v1/map_point/
 https://smi2.ru
-https://polls.smi2.ru/body/1/poll
 https://www.strategic-culture.org
 https://southfront.org
 https://sovross.ru
@@ -152,11 +145,9 @@ https://therussophile.org
 https://triumphlingerie.ru
 https://trmzk.ru
 https://tsargrad.tv
-https://cloud.tsargrad.tv/nextcloud/index.php/login
 https://mirtesen.tsargrad.tv/
 https://ulgov.ru
 https://www.unicreditbank.ru/ru/personal.html
-https://enter.unicredit.ru/v2/cgi/bsi.dll
 https://login.unicredit.ru/login
 https://login.unicredit.ru/webapi-1.0/translate
 https://universe-tss.su
