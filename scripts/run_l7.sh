@@ -6,5 +6,5 @@ python3 runner.py \
   --config https://raw.githubusercontent.com/FluxState/warlists/main/l7.lst \
   --debug \
   --http-methods RGET \
-  --threads 2544 \
+  --threads 2448 \
   --vpn
