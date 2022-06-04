@@ -7,5 +7,5 @@ python3 runner.py \
   --debug \
   --http-methods CFB \
   --lang en \
-  --threads 112 \
+  --threads 120 \
   --vpn

@@ -7,5 +7,5 @@ python3 runner.py \
   --debug \
   --http-methods GET STRESS \
   --lang en \
-  --threads 704 \
+  --threads 688 \
   --vpn
