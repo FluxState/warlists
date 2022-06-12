@@ -7,5 +7,5 @@ python3 runner.py \
   --debug \
   --http-methods RGET \
   --lang en \
-  --threads 2496 \
+  --threads 2368 \
   --vpn
