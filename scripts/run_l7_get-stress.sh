@@ -4,8 +4,7 @@
 
 python3 runner.py \
   --config https://raw.githubusercontent.com/FluxState/warlists/main/l7_get-stress.lst \
-  --debug \
   --http-methods GET STRESS \
   --lang en \
-  --threads 736 \
+  --threads 688 \
   --vpn
