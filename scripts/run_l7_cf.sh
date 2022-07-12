@@ -12,7 +12,7 @@ LINES=$(cat $BASE_DIR/../$BASE_FILE | wc -l)
 LINES_PER_PART=$(echo "$(calc "$LINES/$DAYS_IN_MONTH")" | python3 -c "print(round(float(input())))")
 TARGETS_FILE="$BASE_DIR/../$BASE_FILE"
 TARGETS_FILE_SPLIT="$BASE_DIR/../$BASE_FILE.$CURRENT_DAY"
-((THREADS=$LINES*(2**3)))
+((THREADS=$LINES*(2**4)))
 
 split --numeric-suffixes=1 -l $LINES_PER_PART $TARGETS_FILE "$TARGETS_FILE."
 
