@@ -43,9 +43,10 @@ https://skidki.raiffeisen.ru/api/geo/mall/list?page=0&pageSize=5000&regionId=1
 https://www.rambler.ru/api/v4/personalized
 https://peroxide.rambler.ru/v1/comments/clusters/
 https://rcm.rambler.ru
-https://rodina.news
+https://rossaprimavera.ru/feed/news
 https://sbdr.ru/api/v1/map_point/
-https://smi2.ru/api/search?limit=1000&offset=0&order=date&query=%D0%B5%D1%82%D0%BE
+https://smi2.ru/api/search?limit=999&offset=0&order=date&query=%D0%B5%D1%82%D0%BE
 http://stringer-news.com
+https://vm.ru
 https://voskhodinfo.su
 https://vsednr.ru/?s=a
