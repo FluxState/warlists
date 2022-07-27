@@ -3,20 +3,21 @@
 # https://github.com/porthole-ascend-cinnamon/mhddos_proxy
 
 BASE_DIR="$(dirname -- "$(readlink -f "${BASH_SOURCE}")")"
-BASE_FILE='l7_get-stress.lst'
+BASE_FILE='l7_stress.lst'
 CURRENT_DAY=$(printf %02d `date +%d`)
 DAYS_IN_MONTH=$(cal |egrep -v [a-z] |wc -w)
 LINES=$(cat $BASE_DIR/../$BASE_FILE | wc -l)
-LINES_PER_PART=$(python3 -c "print(round(float($LINES/$DAYS_IN_MONTH)))")
 TARGETS_FILE="$BASE_DIR/../$BASE_FILE"
-((THREADS=$LINES*(2**5)))
+((THREADS=$LINES*(2**4)))
+
+if [ "$DAYS_IN_MONTH" -lt "$LINES" ]; then
+  LINES_PER_PART=$(python3 -c "print(round(float($LINES/$DAYS_IN_MONTH)))")
+else
+  LINES_PER_PART=1
+fi
 
 MAX_SPLIT_N=$(python3 -c "from math import ceil; print(ceil(float($LINES/$LINES_PER_PART)))")
-if [ "$CURRENT_DAY" -gt "$MAX_SPLIT_N" ]; then
-  CURRENT_SPLIT=$MAX_SPLIT_N
-else
-  CURRENT_SPLIT=$CURRENT_DAY
-fi
+CURRENT_SPLIT=$(python3 -c "print(round(float($MAX_SPLIT_N*$CURRENT_DAY/$DAYS_IN_MONTH)))")
 TARGETS_FILE_SPLIT="$BASE_DIR/../$BASE_FILE.$CURRENT_SPLIT"
 
 split --numeric-suffixes=1 -l $LINES_PER_PART $TARGETS_FILE "$TARGETS_FILE."
