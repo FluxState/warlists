@@ -4,7 +4,7 @@
 
 BASE_DIR="$(dirname -- "$(readlink -f "${BASH_SOURCE}")")"
 BASE_FILE='l7_stress.lst'
-CURRENT_DAY=$(printf %02d `date +%d`)
+CURRENT_DAY=$(date +%d)
 DAYS_IN_MONTH=$(cal |egrep -v [a-z] |wc -w)
 LINES=$(cat $BASE_DIR/../$BASE_FILE | wc -l)
 TARGETS_FILE="$BASE_DIR/../$BASE_FILE"
@@ -17,7 +17,7 @@ else
 fi
 
 MAX_SPLIT_N=$(python3 -c "from math import ceil; print(ceil(float($LINES/$LINES_PER_PART)))")
-CURRENT_SPLIT=$(python3 -c "print(round(float($MAX_SPLIT_N*$CURRENT_DAY/$DAYS_IN_MONTH)))")
+CURRENT_SPLIT=$(printf %02d `python3 -c "print(round(float($MAX_SPLIT_N*$CURRENT_DAY/$DAYS_IN_MONTH)))"`)
 TARGETS_FILE_SPLIT="$BASE_DIR/../$BASE_FILE.$CURRENT_SPLIT"
 
 split --numeric-suffixes=1 -l $LINES_PER_PART $TARGETS_FILE "$TARGETS_FILE."
