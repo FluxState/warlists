@@ -24,7 +24,7 @@ split --numeric-suffixes=1 -l $LINES_PER_PART $TARGETS_FILE "$TARGETS_FILE."
 
 python3 runner.py \
   --config "$TARGETS_FILE_SPLIT" \
-  --http-methods GET STRESS \
+  --http-methods GET \
   --lang en \
   --threads "$THREADS" \
   --vpn
