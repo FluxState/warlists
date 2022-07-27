@@ -12,7 +12,7 @@ TARGETS_FILE="$BASE_DIR/../$BASE_FILE"
 ((THREADS=$LINES*(2**4)))
 
 MAX_SPLIT_N=$(python3 -c "from math import ceil; print(ceil(float($LINES/$LINES_PER_PART)))")
-if [ "$DAYS_IN_MONTH" -gt "$MAX_SPLIT_N" ]; then
+if [ "$CURRENT_DAY" -gt "$MAX_SPLIT_N" ]; then
   CURRENT_SPLIT=$MAX_SPLIT_N
 else
   CURRENT_SPLIT=$CURRENT_DAY
