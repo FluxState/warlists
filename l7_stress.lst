@@ -3,6 +3,7 @@ https://mail.hoffmann-group.ru:9443/search?q=1&limit=10000&offset=0
 https://lenta.ru/search/v2/process?from=0&size=999&sort=2&title_only=0&domain=1&modified%2Cformat=yyyy-MM-dd&query=a
 https://api.papajohns.ru/stock/unconditional-list?city_id=1&lang=ru&platform=web
 https://oapi.raiffeisen.ru/api/
+https://online.raiffeisen.ru/import/web/translate/ru.json
 https://skidki.raiffeisen.ru/api/geo/mall/list?page=0&pageSize=5000&regionId=1
 https://www.rambler.ru/api/v4/personalized/
 https://peroxide.rambler.ru/v1/comments/clusters/
