@@ -1,0 +1,101 @@
+{
+  "targets": [
+    {
+      "target": "https://donbasstoday.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://donbasstoday.ru/\"}",
+        "path_qs": "/page/{{int(1,9999)}}/?s={{(str(1)}}"
+      }
+    },
+    {
+      "target": "https://www.donnews.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.donnews.ru/\"}",
+        "path_qs": "/search/{{int(1,100)}}/?cur_cc=3&search_query={{(str(1)}}+page_type%3Aarticle"
+      }
+    },
+    {
+      "target": "https://dontimes.ru",
+      "method": "GET",
+      "options": {
+        "path_qs": "/"
+      }
+    },
+    {
+      "target": "https://fine-news.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://fine-news.ru/\"}",
+        "path_qs": "/page/{{int(1,1506)}}/?s={{(str(1)}}"
+      }
+    },
+    {
+      "target": "https://mosregtoday.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mosregtoday.ru/\"}",
+        "path_qs": "/search/?search={{(str(1)}}&page={{int(1,100)}}&per-page=10"
+      }
+    },
+    {
+      "target": "https://novorossiia.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mosregtoday.ru/\"}",
+        "path_qs": "/page/{{int(1,18383)}}"
+      }
+    },
+    {
+      "target": "https://politcentr.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "do=search&subaction=search&search_start={{int(1,5)}}&full_search=0&result_from={{int(1,41)}}&story=%D0%B5%D1%82%D0%BE%D0%BC",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://politcentr.ru/\"}",
+        "path_qs": "/index.php?do=search",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://politexpert.net",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "{\"query\":\"ето\",\"options\":{\"full\":true,\"limit\":1000,\"offset\":0,\"maxDate\":1659713148,\"type\":\"byScore\",\"days\":\"365\",\"categories\":[],\"fields\":[\"title\"]}}",
+        "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://politexpert.net\"}",
+        "path_qs": "/html/searchPosts/render/",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://rostovgazeta.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://rostovgazeta.ru/\"}",
+        "path_qs": "/api/v1/matters?q={{str(1)}}&limit=100"
+      }
+    },
+    {
+      "target": "https://russia-insider.com",
+      "method": "GET",
+      "options": {
+        "path_qs": "/en"
+      }
+    },
+    {
+      "target": "https://sbarro-pizza.ru",
+      "method": "RGET",
+      "options": {
+        "path_qs": "/"
+      }
+    },
+    {
+      "target": "https://therussophile.org",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://therussophile.org/\", \"x-requested-with\": \"XMLHttpRequest\"}",
+        "path_qs": "/page/{{int(1,100)}}/?s={{str(1)}}&tf-scroll=1"
+      }
+    }
+  ]
+}
