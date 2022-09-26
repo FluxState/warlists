@@ -25,12 +25,13 @@ https://www.pravda.ru
 https://pravdoryb.info
 https://projahn-russia.ru
 https://rg.ru
-https://riamo.ru
+https://riamo.ru  # behind crypto cookie
 https://rodina.news
-https://rostovgazeta.ru
+https://rostovgazeta.ru  # probably same server as 56orb
 http://ruspravda.info
 https://russia-insider.com/ru/search?word=a&main-submit=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA
 https://sbarro-pizza.ru
+https://taurica.net  # cf + 403 on direct
 https://therussophile.org/?s=a
 https://thesaker.is
 https://tsargrad.tv
