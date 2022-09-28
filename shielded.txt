@@ -29,10 +29,12 @@ https://riamo.ru  # behind crypto cookie
 https://rodina.news
 https://rostovgazeta.ru  # probably same server as 56orb
 http://ruspravda.info
+https://russia58.tv/projects/zamir/  # drop
 https://russia-insider.com/ru/search?word=a&main-submit=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA
 https://sbarro-pizza.ru
 https://svpressa.ru  # 429 Too Many Requests + drop
 https://taurica.net  # cf + 403 on direct
+https://tehnowar.ru  # cf
 https://therussophile.org/?s=a
 https://thesaker.is
 https://trmzk.ru  # sw
