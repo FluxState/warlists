@@ -1,0 +1,44 @@
+{
+  "targets": [
+    {
+      "target": "https://www.bnkomi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Accept\": \"application/json, text/javascript, */*; q=0.01\", \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Referer\": \"https://www.bnkomi.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
+        "path_qs": "/countComments/{{int(1,149703)}}",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://www.bnkomi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.bnkomi.ru/\"}",
+        "path_qs": "/data/news/go/{{int(1,100)}}/category/{{int(1,62)}}"
+      }
+    },
+    {
+      "target": "https://www.bnkomi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.bnkomi.ru/\"}",
+        "path_qs": "/find?query=%D1%80%D0%BE%D1%81%D1%81&beginDate=&endDate=&category=&page={{int(1,1587)}}"
+      }
+    },
+    {
+      "target": "https://ru.boggi.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "path_qs": "/catalog/?q={{str(1)}}&PAGEN_2={{int(1,5)}}"
+      }
+    },
+    {
+      "target": "https://dni.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://dni.ru/\"}",
+        "path_qs": "/more/search/{{int(1,10000)}}/?q={{str(1)}}&{{str(4)}}={{str(4)}}"
+      }
+    }
+  ]
+}
