@@ -23,7 +23,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://delonghi.ru/\"}",
-        "path_qs": "/search/{{int(1,8)}}?qs={{str(1)}}"
+        "path_qs": "/catalog/kofemashiny-avtomaticheskie/{{int(1,6)}}"
       }
     },
     {
