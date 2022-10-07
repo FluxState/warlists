@@ -1,6 +1,16 @@
 {
   "targets": [
     {
+      "target": "https://compromat.group",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "do=search&subaction=search&search_start={{int(1,5)}}&full_search=0&result_from={{int(1,41)}}&story=%D0%B5%D1%82%D0%BE%D0%BC",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://compromat.group/\"}",
+        "path_qs": "/index.php?do=search",
+        "verb": "POST"
+      }
+    },
+    {
       "target": "https://crimea-news.com",
       "method": "HTTP_TEMPLATE",
       "options": {
