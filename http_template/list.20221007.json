@@ -1,0 +1,36 @@
+{
+  "targets": [
+    {
+      "target": "https://crimea-news.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://crimea-news.com/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
+        "path_qs": "/index.php?do=getnews&page={{int(1,1000)}}&cat=0&count=10&sort=last&cityid=undefined&personid=undefined&theme_id=undefined"
+      }
+    },
+    {
+      "target": "https://delonghi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://delonghi.ru/\"}",
+        "path_qs": "/search/{{int(1,8)}}?qs={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://frigoglass-shop.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://frigoglass-shop.ru/\"}",
+        "path_qs": "/search?q={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://www.geopolitika.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.geopolitika.ru/\"}",
+        "path_qs": "/search/node/%D0%B5%D1%82%D0%BE?page={{int(1,333)}}&{{str(4)}}={{str(4)}}"
+      }
+    }
+  ]
+}
