@@ -11,6 +11,14 @@
       }
     },
     {
+      "target": "https://dnr24.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://dnr24.com/\"}",
+        "path_qs": "/dnr-news/page/{{int(1,366)}}/"
+      }
+    },
+    {
       "target": "https://search.president.gov.by",
       "method": "HTTP_TEMPLATE",
       "options": {
