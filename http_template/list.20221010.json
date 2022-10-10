@@ -1,14 +1,6 @@
 {
   "targets": [
     {
-      "target": "https://lug-info.com",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "headers": "{\"authorization\": \"Basic ZGV2OnVpTWFoQ2g3T1hpXw==\", \"Accept\": \"application/json\", \"Referer\": \"https://lug-info.com/news\"}",
-        "path_qs": "/api/ru/news?epp=100&orderByField=publishedAt&inList=true&eppOffset={{int(0,86175)}}"
-      }
-    },
-    {
       "target": "https://www.m24.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
