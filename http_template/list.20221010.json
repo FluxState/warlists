@@ -1,6 +1,14 @@
 {
   "targets": [
     {
+      "target": "https://fine-news.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://fine-news.ru/\"}",
+        "path_qs": "/?s={{str(1)}}"
+      }
+    },
+    {
       "target": "https://www.m24.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
