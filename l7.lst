@@ -17,7 +17,7 @@ https://gtrklnr.ru
 https://video.gtrklnr.ru/?search=a
 https://katehon.com/ru/search/node/
 https://www.kia.ru
-https://lug-info.com/api/ru/publications?epp=20000&orderByField=publishedAt&search=%D0%9B%D1%83%D0%B3%D0%B0%D0%BD%D1%81%D0%BA&eppOffset=0
+https://lug-info.com/api/ru/news?epp=100000&orderByField=publishedAt&inList=true&eppOffset=0
 https://www.m24.ru
 https://mail.ru
 https://news.mail.ru
