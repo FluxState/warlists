@@ -4,7 +4,7 @@
       "target": "https://gorlovka-news.su",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Referer\": \"https://gorlovka-news.su/\"}",
+        "headers": "{\"Cookie\": \"beget=begetok; expires=09 Apr 2636 16:48:17 GMT; path=/\", \"Referer\": \"https://gorlovka-news.su/\"}",
         "path_qs": "/page/{{int(1,100)}}?s=%D0%A0%D0%BE%D1%81%D1%81"
       }
     }
