@@ -1,0 +1,20 @@
+{
+  "targets": [
+    {
+      "target": "https://gorlovka-news.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Cookie\": \"beget=begetok; expires=24 May 2023 12:23:57 GMT; path=/\", \"Referer\": \"https://gorlovka-news.su/\"}",
+        "path_qs": "/page/{{int(1,100)}}?s=%D0%A0%D0%BE%D1%81%D1%81"
+      }
+    }
+    {
+      "target": "https://mfa.gov.by",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mfa.gov.by/\"}",
+        "path_qs": "/press/news_mfa/json/?get_more_news&lang=ru&tid=ru_news_mfa&page={{int(1,10000)}}&date_from=&date_to="
+      }
+    }
+  ]
+}
