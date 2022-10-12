@@ -12,7 +12,7 @@
       "target": "https://mfa.gov.by",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Referer\": \"https://mfa.gov.by/\"}",
+        "headers": "{\"Accept\": \"application/json, text/javascript, */*; q=0.01\", \"Referer\": \"https://mfa.gov.by/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
         "path_qs": "/press/news_mfa/json/?get_more_news&lang=ru&tid=ru_news_mfa&page={{int(1,10000)}}&date_from=&date_to="
       }
     }
