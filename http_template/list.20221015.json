@@ -1,0 +1,44 @@
+{
+  "targets": [
+    {
+      "target": "https://mid-dnr.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mid-dnr.su/\"}",
+        "path_qs": "/ru/search/?search={{str(1)}}&page={{int(1,346)}}"
+      }
+    },
+    {
+      "target": "https://mid-dnr.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mid-dnr.su/\"}",
+        "path_qs": "/ru/?page={{int(1,650)}}"
+      }
+    },
+    {
+      "target": "https://legrand.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://legrand.ru/\"}",
+        "path_qs": "/search/index.php?q=a&page={{int(1,3000)}}"
+      }
+    },
+    {
+      "target": "https://lenta.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://lenta.ru/\"}",
+        "path_qs": "/search/v2/process?from=0&size=999&sort=2&title_only=0&domain=1&modified%2Cformat=yyyy-MM-dd&query={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://www.leptos-estates.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.leptos-estates.ru/\"}",
+        "path_qs": "/all-countries/all-locations/all-types/0-10000000/page{{int(0,3)}}"
+      }
+    }
+  ]
+}
