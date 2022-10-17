@@ -5,7 +5,7 @@
 BASE_DIR="$(dirname -- "$(readlink -f "${BASH_SOURCE}")")"
 BASE_FILE='l7_get.lst'
 CURRENT_DAY=$(date +%-d)
-DAYS_IN_MONTH=$(cal |egrep -v [a-z] |wc -w)
+DAYS_IN_MONTH=$(cal | egrep -v [a-z] |wc -w)
 LINES=$(cat $BASE_DIR/../$BASE_FILE | wc -l)
 TARGETS_FILE="$BASE_DIR/../$BASE_FILE"
 ((THREADS=$LINES*(2**5)))

@@ -21,6 +21,14 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://www.nakanune.ru/\"}",
+        "path_qs": "/news/2022/01/01/{{int(1,22682101)}}/"
+      }
+    },
+    {
+      "target": "https://www.nakanune.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.nakanune.ru/\"}",
         "path_qs": "/search/?_search=%D0%B5%D1%82%D0%BE&author=&articles=1&news=1&video=1&full_text=1&keywords=1&from=&to=&region=&tematik=&tpage={{int(1,406)}}"
       }
     },
