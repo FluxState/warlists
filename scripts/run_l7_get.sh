@@ -8,7 +8,7 @@ CURRENT_DAY=$(date +%-d)
 DAYS_IN_MONTH=$(cal |egrep -v [a-z] |wc -w)
 LINES=$(cat $BASE_DIR/../$BASE_FILE | wc -l)
 TARGETS_FILE="$BASE_DIR/../$BASE_FILE"
-((THREADS=$LINES*(2**6)))
+((THREADS=$LINES*(2**5)))
 
 if [ "$DAYS_IN_MONTH" -lt "$LINES" ]; then
   LINES_PER_PART=$(python3 -c "print(round(float($LINES/$DAYS_IN_MONTH)))")
