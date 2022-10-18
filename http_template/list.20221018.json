@@ -23,7 +23,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://novorosinform.org/\"}",
-        "path_qs": "/search?q={{str(1)}}&section=all"
+        "path_qs": "/ajax/loadmore?page={{int(1,10000)}}&category="
       }
     },
     {
