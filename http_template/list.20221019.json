@@ -11,16 +11,6 @@
       }
     },
     {
-      "target": "https://politcentr.ru",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "body": "do=search&subaction=search&search_start={{int(1,5)}}&full_search=0&result_from={{int(1,41)}}&story=%D0%B5%D1%82%D0%BE%D0%BC",
-        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://politcentr.ru/\"}",
-        "path_qs": "/index.php?do=search",
-        "verb": "POST"
-      }
-    },
-    {
       "target": "https://nation-news.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
@@ -34,7 +24,7 @@
       "target": "https://newsland.com",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "body": "{\"title\":\"{{str(1)}}\",\"cat_id\":\"\",\"tag_id\":\"\"}",
+        "body": "{\"title\":\"{{str(1)}}\",\"cat_id\":null,\"tag_id\":null,\"offset\":{{int(1,1000)}}}",
         "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://newsland.com/search\"}",
         "path_qs": "/send",
         "verb": "POST"
