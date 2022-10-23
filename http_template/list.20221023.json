@@ -1,0 +1,28 @@
+{
+  "targets": [
+    {
+      "target": "https://oppo.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://oppo.ru\"}",
+        "path_qs": "/?s={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://rusonline.org",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://rusonline.org/\"}",
+        "path_qs": "/search?s={{str(1)}}&page={{int(1,10)}}"
+      }
+    },
+    {
+      "target": "https://www.sgs.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.sgs.ru/\"}",
+        "path_qs": "/ru-ru/searchresults?s={{str(1)}}&p={{int(0,30)}}&d=4294967084&id=184051921B3C&dc=http&lb="
+      }
+    }
+  ]
+}
