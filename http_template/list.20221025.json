@@ -14,7 +14,7 @@
       "target": "https://politexpert.net/search",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "body": "{\"query\":\"США\",\"options\":{\"full\":true,\"limit\":{{int(1,1000)}},\"offset\":{{int(1,1000)}},\"maxDate\":1663693142,\"type\":\"byDate\",\"days\":\"365\",\"categories\":[],\"fields\":[\"title\",\"data\"]}}",
+        "body": "{\"query\":\"США\",\"options\":{\"full\":true,\"limit\":{{int(1,1000)}},\"offset\":{{int(1,1000)}},\"maxDate\":,\"type\":\"byDate\",\"days\":\"365\",\"categories\":[],\"fields\":[\"title\",\"data\"]}}",
         "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://politexpert.net/search\"}",
         "path_qs": "/html/searchPosts/render/",
         "verb": "POST"
