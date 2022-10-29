@@ -33,6 +33,22 @@
         "headers": "{\"Referer\": \"https://russia-insider.com/\"}",
         "path_qs": "/ru/search?word={{str(1)}}&main-submit=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA"
       }
+    },
+    {
+      "target": "https://api.vedomosti.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.vedomosti.ru/\", \"Accept\": \"application/json, text/plain, */*\", \"X-Access-Token\": \"9dad7f0da4881021bab6c99e9c14bae5ce08736b\"}",
+        "path_qs": "/v2/documents/search?query={{str(1)}}%20%D0%B5&sort=date&from={{int(1,1000)}}&limit=20"
+      }
+    },
+    {
+      "target": "https://jay.vedomosti.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.vedomosti.ru/\", \"Accept\": \"*/*\"}",
+        "path_qs": "/suggest?count=1000"
+      }
     }
   ]
 }
