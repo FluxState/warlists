@@ -19,16 +19,6 @@
       }
     },
     {
-      "target": "https://tehnowar.ru",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "body": "do=search&subaction=search&search_start={{int(1,5)}}&full_search=0&result_from={{int(1,41)}}",
-        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://tehnowar.ru/\"}",
-        "path_qs": "/index.php?do=search",
-        "verb": "POST"
-      }
-    },
-    {
       "target": "https://utro.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
