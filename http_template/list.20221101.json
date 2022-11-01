@@ -29,6 +29,30 @@
         "headers": "{\"Referer\": \"https://78.ru/\"}",
         "path_qs": "/api/graphql"
       }
+    },
+    {
+      "target": "https://78.ru",
+      "method": "GET",
+      "options": {
+        "headers": "{\"Referer\": \"https://78.ru/\"}",
+        "path_qs": "/api/jams"
+      }
+    },
+    {
+      "target": "https://78.ru",
+      "method": "GET",
+      "options": {
+        "headers": "{\"Referer\": \"https://78.ru/\"}",
+        "path_qs": "/api/currencies"
+      }
+    },
+    {
+      "target": "https://78.ru",
+      "method": "GET",
+      "options": {
+        "headers": "{\"Referer\": \"https://78.ru/\"}",
+        "path_qs": "/api/weather"
+      }
     }
   ]
 }
