@@ -1,0 +1,52 @@
+{
+  "targets": [
+    {
+      "target": "https://www.belta.by",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.belta.by/\"}",
+        "path_qs": "/search/getResults/page/{{int(1,84)}}/?query=%D0%B5%D1%82%D0%BE"
+      }
+    },
+    {
+      "target": "https://bloknot-rostov.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://bloknot-rostov.ru/\"}",
+        "path_qs": "/search/?q=%D0%B0+%D1%81+%D0%BA+%D0%BD%D0%B0+%D0%B2+%D0%BE%D1%82&s=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA&PAGEN_1={{int(1,50)}}"
+      }
+    },
+    {
+      "target": "https://www.bnkomi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Accept\": \"application/json, text/javascript, */*; q=0.01\", \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Referer\": \"https://www.bnkomi.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
+        "path_qs": "/countComments/{{int(1,149703)}}",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://www.bnkomi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.bnkomi.ru/\"}",
+        "path_qs": "/data/news/go/{{int(1,100)}}/category/{{int(1,62)}}"
+      }
+    },
+    {
+      "target": "https://www.bnkomi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.bnkomi.ru/\"}",
+        "path_qs": "/find?query=%D1%80%D0%BE%D1%81%D1%81&beginDate=&endDate=&category=&page={{int(1,1587)}}"
+      }
+    },
+    {
+      "target": "https://ru.benetton.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "path_qs": "/search/zhenshchiny/?q={{str(1)}}"
+      }
+    }
+  ]
+}
