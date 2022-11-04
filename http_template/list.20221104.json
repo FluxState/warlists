@@ -1,14 +1,6 @@
 {
   "targets": [
     {
-      "target": "https://www.belta.by",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "headers": "{\"Referer\": \"https://www.belta.by/\"}",
-        "path_qs": "/search/getResults/page/{{int(1,84)}}/?query=%D0%B5%D1%82%D0%BE"
-      }
-    },
-    {
       "target": "https://bloknot-rostov.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
@@ -39,13 +31,6 @@
       "options": {
         "headers": "{\"Referer\": \"https://www.bnkomi.ru/\"}",
         "path_qs": "/find?query=%D1%80%D0%BE%D1%81%D1%81&beginDate=&endDate=&category=&page={{int(1,1587)}}"
-      }
-    },
-    {
-      "target": "https://ru.benetton.com",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "path_qs": "/search/zhenshchiny/?q={{str(1)}}"
       }
     }
   ]
