@@ -1,0 +1,22 @@
+{
+  "targets": [
+    {
+      "target": "https://news.gtrklnr.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "do=search&subaction=search&search_start={{int(1,5)}}&full_search=0&result_from={{int(1,41)}}&story=%D0%B5%D1%82%D0%BE%D0%BC",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://news.gtrklnr.ru/\"}",
+        "path_qs": "/index.php?do=search",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://video.gtrklnr.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://video.gtrklnr.ru/\"}",
+        "path_qs": "/page/{{int(1,5)}}?search={{str(1)}}"
+      }
+    }
+  ]
+}
