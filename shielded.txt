@@ -18,6 +18,7 @@ dni.ru  # drop
 https://dnr-pravda.ru/?s=a
 https://dontimes.ru/?s=a
 https://dosie.su
+https://fenzirussia.com  # geo
 https://gorlovka-news.su
 https://hardrockcafespb.ru
 https://hardrockcafe.ru/shop/cat/10/a  # ddg
