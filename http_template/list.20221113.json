@@ -1,9 +1,18 @@
 {
   "targets": [
     {
+      "target": "https://haieronline.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://haieronline.ru/\"}",
+        "path_qs": "/search/?q={{str(1)}}"
+      }
+    },
+    {
       "target": "https://mail.hoffmann-group.ru:9443",
       "method": "HTTP_TEMPLATE",
       "options": {
+        "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
         "path_qs": "/search?q={{int(1,9)}}&limit=1000&offset={{int(0,1000)}}"
       }
     },
