@@ -1,0 +1,54 @@
+{
+  "targets": [
+    {
+      "target": "https://lenta.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://lenta.ru/\"}",
+        "path_qs": "/search/v2/process?from=0&size=999&sort=2&title_only=0&domain=1&modified%2Cformat=yyyy-MM-dd&query={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://www.leptos-estates.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.leptos-estates.ru/\"}",
+        "path_qs": "/all-countries/all-locations/all-types/0-10000000/page{{int(0,3)}}"
+      }
+    },
+    {
+      "target": "https://api.corr.life",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "{\"limit\":20,\"query\":{\"match\":{\"title,subtitle\":{\"query\":\"{{str(1)}}\",\"operator\":\"and\"}}},\"sort\":[{\"publication_date\":\"desc\"}],\"offset\":{{int(0,1000)}},\"index\":\"postrt\",\"highlight\":{\"limit\":60,\"before_match\":\"<mark>\",\"after_match\":\"</mark>\"}}",
+        "headers": "{\"Content-Length\": \"524\", \"Content-Type\": \"application/json\", \"Referer\": \"https://life.ru/\"}",
+        "path_qs": "/public/posts/manticore-search",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://api.corr.life",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://life.ru/\"}",
+        "path_qs": "/public/posts/main/lenta?after={{int(1580000000000,1665772487427)}}"
+      }
+    },
+    {
+      "target": "https://mid-dnr.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mid-dnr.su/\"}",
+        "path_qs": "/ru/search/?search={{str(1)}}&page={{int(1,346)}}"
+      }
+    },
+    {
+      "target": "https://mid-dnr.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mid-dnr.su/\"}",
+        "path_qs": "/ru/?page={{int(1,650)}}"
+      }
+    }
+  ]
+}
