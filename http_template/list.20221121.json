@@ -25,6 +25,14 @@
       }
     },
     {
+      "target": "https://ont.by",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://ont.by\"}",
+        "path_qs": "/api/articles/articles?page={{int(1,24)}}&per_page=24&filter[search]=%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81&filter[period]=&{{str(4)}}={{str(4)}}"
+      }
+    },
+    {
       "target": "https://rf-smi.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
