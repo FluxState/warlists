@@ -1,22 +1,6 @@
 {
   "targets": [
     {
-      "target": "https://riamo.ru",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "headers": "{\"Referer\": \"https://riamo.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
-        "path_qs": "/ajax/more-search.xl?serial=bjgPHBoHDQILNUZGAw8aDQZGThoHGgILQkkPTr7bTr7QSUdOARxOAw8aDQZGThoLFhpCSQ9OvttOvtBJR0dHM04BHAoLHE4MF04eGwwCBx0GCwpOCgsdDW4-&offset={{int(1,10000)}}"
-      }
-    },
-    {
-      "target": "https://riamo.ru",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "headers": "{\"Referer\": \"https://riamo.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
-        "path_qs": "https://riamo.ru/ajax/news.xl?type=all&filter=&offset=0&main=1&last={{int(200000,585865)}}"
-      }
-    },
-    {
       "target": "https://odnarodyna.org",
       "method": "HTTP_TEMPLATE",
       "options": {
