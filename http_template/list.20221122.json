@@ -52,6 +52,7 @@
         "headers": "{\"Accept\": \"application/json, text/javascript, */*; q=0.01\",  \"Content-Length\": \"7036\", \"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Referer\": \"https://www.ritmeurasia.org/\"}",
         "path_qs": "/views/ajax",
         "verb": "POST"
-      },
+      }
+    }
   ]
 }
