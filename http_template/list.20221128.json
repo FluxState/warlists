@@ -30,8 +30,8 @@
       "target": "https://russia-insider.com",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Referer\": \"https://russia-insider.com/\"}",
-        "path_qs": "/ru/search?word={{str(1)}}&main-submit=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA"
+        "headers": "{\"Referer\": \"https://russia-insider.com/en\"}",
+        "path_qs": "https://russia-insider.com/en/search?word={{str(1)}}&main-submit=Search&{{str(4)}}={{str(4)}}"
       }
     },
     {
@@ -42,18 +42,10 @@
       }
     },
     {
-      "target": "https://taurica.net",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "headers": "{\"Referer\": \"https://taurica.net/\"}",
-        "path_qs": "/page/{{int(1,14007)}}/"
-      }
-    },
-    {
       "target": "https://swiss-krono.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Referer\": \"https://swiss-krono.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Cookie\": \"beget=begetok; thwcfe_session_id=thwcfe_926b3ee9ce57e51f6e3a5e6839e6b270; xlutm_params_first_occurrence=%7B%22timestamp%22%3A1669620038%7D\", \"Referer\": \"https://swiss-krono.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
         "path_qs": "/shop/page/{{int(1,10)}}/?s={{str(1)}}&post_type=product&per_page=24&_pjax=.main-page-wrapper"
       }
     }
