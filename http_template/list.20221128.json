@@ -5,7 +5,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://rueconomics.ru/news\"}",
-        "path_qs": "/html/getListLenta/render/{{int(1580000000,1664193251)}}/-1/category"
+        "path_qs": "/html/getListLenta/render/{{int(1580000000,1669405955)}}/-1/category"
       }
     },
     {
@@ -13,7 +13,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://russia58.tv/\"}",
-        "path_qs": "/news/{{int(1600,598259)}}"
+        "path_qs": "/news/{{int(1600,608582)}}"
       }
     },
     {
