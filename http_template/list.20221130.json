@@ -1,0 +1,12 @@
+{
+  "targets": [
+    {
+      "target": "https://webkamerton.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://webkamerton.ru/\"}",
+        "path_qs": "/search/content?keys=%D0%B5%D1%82%D0%BE&page={{int(1,1000)}}"
+      }
+    }
+  ]
+}
