@@ -15,6 +15,14 @@
         "headers": "{\"Referer\": \"http://wpristav.com/\"}",
         "path_qs": "/search/?q={{str(1)}};t=0;p={{int(1,50)}};md="
       }
+    },
+    {
+      "target": "http://wpristav.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"http://wpristav.com/\"}",
+        "path_qs": "/news/?page{{int(1,5328)}}"
+      }
     }
   ]
 }
