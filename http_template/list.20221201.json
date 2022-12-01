@@ -12,7 +12,16 @@
       "target": "https://www.belarus.by",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "path_qs": "/ru/press-center/news?&date={{int(1483225200,1661983200)}}"
+        "headers": "{\"Referer\": \"https://www.belarus.by/ru/press-center/news/\"}",
+        "path_qs": "/ru/press-center/news?&date={{int(1483225200,1669849200)}}"
+      }
+    },
+    {
+      "target": "https://www.belarus.by",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.belarus.by/ru/press-center/news/\"}",
+        "path_qs": "/ru/press-center/news/?page={{int(1,153)}}&{{str(4)}}={{str(4)}}"
       }
     }
   ]
