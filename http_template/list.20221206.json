@@ -14,7 +14,7 @@
       "target": "https://chechnya.online",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Cookie\": \"_yekxdf=43861283955341972377\", \"Referer\": \"https://chechnya.online/\"}",
+        "headers": "{\"Cookie\": \"_yekxdf=22910283955336364570\", \"Referer\": \"https://chechnya.online/\"}",
         "path_qs": "/ru/search/?key={{str(1)}}&date1=19700101&date2=20221230&page={{int(1,225)}}"
       }
     },
