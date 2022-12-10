@@ -13,7 +13,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://www.m24.ru/\"}",
-        "path_qs": "/news/politika/10102022/{{int(1,509749)}}?{{str(4)}}={{str(4)}}"
+        "path_qs": "/news/politika/10122022/{{int(1,530064)}}?{{str(4)}}={{str(4)}}"
       }
     },
     {
