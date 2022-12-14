@@ -14,7 +14,8 @@
       "options": {
         "body": "{\"products\":[\"{{int(1,99999)}} {{int(1,999)}}\"]}",
         "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://hoffmann-group.ru/\"}",
-        "path_qs": "/price/products"
+        "path_qs": "/price/products",
+        "verb": "POST"
       }
     },
     {
