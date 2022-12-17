@@ -1,0 +1,38 @@
+{
+  "targets": [
+    {
+      "target": "https://mkset.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Accept\": \"application/json, text/plain, */*\", \"Referer\": \"https://mkset.ru/search?q=\"}",
+        "path_qs": "/api/v1/matters?q={{str(1)}}&dates[]=null&dates[]=null&results_order=date&page={{int(1,10)}}"
+      }
+    },
+    {
+      "target": "https://mkset.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "{\"subscriber\":{\"email\":\"{{str(4)}}@mkset.ru\",\"platform_id\":26,\"type\":\"global\"}}",
+        "headers": "{\"Accept\": \"application/json, text/plain, */*\", \"Content-Length\": \"524\", \"Content-Type\": \"application/json;charset=utf-8\", \"Referer\": \"https://mkset.ru/\"}",
+        "path_qs": "/api/v1/subscribers",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://mosregtoday.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mosregtoday.ru/\"}",
+        "path_qs": "/news/?page={{int(1,2702)}}"
+      }
+    },
+    {
+      "target": "https://mosregtoday.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://mosregtoday.ru/\"}",
+        "path_qs": "/search/?search={{str(1)}}&page={{int(1,1000)}}&per-page=10"
+      }
+    }
+  ]
+}
