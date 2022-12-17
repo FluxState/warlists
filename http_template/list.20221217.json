@@ -34,5 +34,13 @@
         "path_qs": "/search/?search={{str(1)}}&page={{int(1,1000)}}&per-page=10"
       }
     }
+    {
+      "target": "https://mymodshair.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Cookie\": \"rerf=AAAAAGOdmR4PIz95A2TtAg==; ipp_uid=1671272734927/JaBUvLYQ79N9GBo6/gJruo+/DuWgctNH90r01mw==; ipp_key=v1671272734927/v33947245ba5adc7a72e273/DpYMga17SqPCV4Tt6LOqag==; _ga=GA1.2.428357000.1671272737; _gid=GA1.2.47637549.1671272737; _ym_uid=1671272737895209231; _ym_d=1671272737; _ym_isad=2; _ym_visorc=w; tildauid=1671272738889.706684; tildasid=1671272738889.559215; _gat_gtag_UA_140520909_2=1; _gat=1; previousUrl=mymodshair.ru/\", \"Referer\": \"https://mymodshair.ru/\"}",
+        "path_qs": "/"
+      }
+    }
   ]
 }
