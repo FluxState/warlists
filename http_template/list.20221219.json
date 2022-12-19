@@ -5,7 +5,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://pandoraopen.ru/?s=\"}",
-        "path_qs": "/wp-admin/admin-ajax.php?s={{str(1)}}&search_sortby=&q=&page={{int(1,100)}}&uid=0&action=load_posts&w=1723"
+        "path_qs": "/wp-admin/admin-ajax.php?s={{str(1)}}&search_sortby=&q=&page={{int(1,100)}}&uid=0&action=load_posts&w=1724"
       }
     },
     {
@@ -21,7 +21,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "body": "{\"title\":\"{{str(1)}}\",\"cat_id\":null,\"tag_id\":null,\"offset\":{{int(1,1000)}}}",
-        "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://newsland.com/search\"}",
+        "headers": "{\"Cookie\": \"_csrf=PSry4Ns2cTmb9zSetxlerat7; surfer_uuid=79e9d502-e626-4c2c-a081-b0b5b7d4c771; la_page_depth=%7B%22last%22%3A%22https%3A%2F%2Fnewsland.com%2F%22%2C%22depth%22%3A7%7D; session_id=undefined\", \"Content-Type\": \"application/json\", \"Referer\": \"https://newsland.com/search\"}",
         "path_qs": "/send",
         "verb": "POST"
       }
