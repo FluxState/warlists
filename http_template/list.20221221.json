@@ -20,6 +20,22 @@
       "target": "https://rf-smi.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
+        "headers": "{\"Referer\": \"https://rf-smi.ru/\"}",
+        "path_qs": "/lastnews/page/{{int(1,4394)}}/"
+      }
+    },
+    {
+      "target": "https://rf-smi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://rf-smi.ru/\"}",
+        "path_qs": "/russ/{{int(1,81644)}}-{{str(1)}}.html"
+      }
+    },
+    {
+      "target": "https://rf-smi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
         "body": "do=search&subaction=search&search_start={{int(1,74)}}&full_search=0&result_from={{int(1,1840)}}",
         "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://rf-smi.ru/\"}",
         "path_qs": "/index.php?do=search",
