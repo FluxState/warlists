@@ -1,0 +1,30 @@
+{
+  "targets": [
+    {
+      "target": "https://nvo.ng.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://nvo.ng.ru/\"}",
+        "path_qs": "/search/?q={{str(1)}}&s=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA"
+      }
+    },
+    {
+      "target": "https://odnarodyna.org",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://odnarodyna.org/\"}",
+        "path_qs": "/new-search?search_api_fulltext={{str(1)}}&page={{int(1,4000)}}"
+      }
+    },
+    {
+      "target": "https://rf-smi.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "do=search&subaction=search&search_start={{int(1,74)}}&full_search=0&result_from={{int(1,1840)}}",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://rf-smi.ru/\"}",
+        "path_qs": "/index.php?do=search",
+        "verb": "POST"
+      }
+    }
+  ]
+}
