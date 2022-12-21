@@ -5,7 +5,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://nvo.ng.ru/\"}",
-        "path_qs": "/search/?q={{str(1)}}&s=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA"
+        "path_qs": "/search/?q=%D0%A0%D0%BE%D1%81%D1%81&s=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA&PAGEN_1={{int(1,300)}}&{{str(4)}}={{str(4)}}"
       }
     },
     {
