@@ -5,7 +5,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://riamo.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
-        "path_qs": "/ajax/more-search.xl?serial=bjgPHBoHDQILNUZGAw8aDQZGThoHGgILQkkPTr7bTr7QSUdOARxOAw8aDQZGThoLFhpCSQ9OvttOvtBJR0dHM04BHAoLHE4MF04eGwwCBx0GCwpOCgsdDW4-&offset={{int(1,10000)}}"
+        "path_qs": "https://riamo.ru/ajax/more-search.xl?serial=bjoPHBoHDQILNUZGAw8aDQZGThoHGgILQkm~zr7Qv~9JR04BHE4DDxoNBkZOGgsWGkJJvs6~0L_vSUdHRzNOARwKCxxODBdOHhsMAgcdBgsKTgoLHQ1u&offset={{int(1,10000)}}"
       }
     },
     {
@@ -13,7 +13,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://riamo.ru/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
-        "path_qs": "https://riamo.ru/ajax/news.xl?type=all&filter=&offset=0&main=1&last={{int(200000,585865)}}"
+        "path_qs": "https://riamo.ru/ajax/news.xl?type=all&filter=&offset=0&main=1&last={{int(200000,606880)}}"
       }
     },
     {
@@ -37,7 +37,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://www.ritmeurasia.org/\"}",
-        "path_qs": "/author--novost-227?&page={{int(1,4390)}}&{{str(4)}}={{str(4)}}"
+        "path_qs": "/author--novost-227?&page={{int(1,4531)}}&{{str(4)}}={{str(4)}}"
       }
     },
     {
