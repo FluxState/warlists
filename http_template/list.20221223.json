@@ -14,11 +14,15 @@
       "target": "https://rossaprimavera.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "body": "{\"q\":\"Украин\",\"sort\":true,\"offset\":{{int(0,20000)}}}",
+        "body": "{\"q\":\"\",\"sort\":true,\"offset\":{{int(0,1084300)}}}",
         "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://rossaprimavera.ru/search\"}",
-        "path_qs": "/poisk/q?cache_enabled=0",
+        "path_qs": "/poisk/q",
         "verb": "POST"
       }
+    },
+    {
+      "target": "92.50.249.11:22",
+      "method": "TCP"
     },
     {
       "target": "http://ru-an.info",
