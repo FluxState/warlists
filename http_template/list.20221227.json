@@ -49,6 +49,10 @@
         "path_qs": "/wp-admin/admin-ajax.php",
         "verb": "POST"
       }
+    },
+    {
+      "target": "192.145.97.84:22",
+      "method": "TCP"
     }
   ]
 }
