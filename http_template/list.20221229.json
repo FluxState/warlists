@@ -5,7 +5,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://russia58.tv/\"}",
-        "path_qs": "/news/{{int(1600,608582)}}"
+        "path_qs": "/news/{{int(1600,614993)}}"
       }
     },
     {
@@ -23,7 +23,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://sovross.ru/\"}",
-        "path_qs": "/numbers/{{int(1,2322)}}"
+        "path_qs": "https://sovross.ru/category/news/flow/page/{{int(1,88)}}/"
       }
     },
     {
@@ -31,7 +31,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://sovross.ru/\"}",
-        "path_qs": "/news/{{int(1,58137)}}"
+        "path_qs": "/page/{{int(1,3000)}}/?s={{str(1)}}"
       }
     },
     {
