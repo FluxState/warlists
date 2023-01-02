@@ -1,10 +1,10 @@
 {
   "targets": [
     {
-      "target": "https://www.belnovosti.by",
+      "target": "https://argumenti.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "path_qs": "/news?page={{int(1,15000)}}&{{str(8)}}={{str(8)}}"
+        "path_qs": "/search/{{str(1)}}/{{int(1,10)}}"
       }
     },
     {
