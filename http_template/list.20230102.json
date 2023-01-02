@@ -23,7 +23,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://www.belta.by/\"}",
-        "path_qs": "/search/getResults/page/{{int(1,84)}}/?query=%D0%B5%D1%82%D0%BE"
+        "path_qs": "/all_news/page/{{int(1,2500)}}/?day=01&month=01&year=23&{{str(4)}}={{str(4)}}"
       }
     }
   ]
