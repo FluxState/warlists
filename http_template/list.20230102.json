@@ -25,6 +25,14 @@
         "headers": "{\"Referer\": \"https://www.belta.by/\"}",
         "path_qs": "/all_news/page/{{int(1,2500)}}/?day=01&month=01&year=23&{{str(4)}}={{str(4)}}"
       }
+    },
+    {
+      "target": "https://ru.benetton.com",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://ru.benetton.com/\"}",
+        "path_qs": "/search/zhenshchiny/?q={{str(1)}}"
+      }
     }
   ]
 }
