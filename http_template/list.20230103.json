@@ -14,6 +14,16 @@
         "headers": "{\"Referer\": \"https://dni.ru/\"}",
         "path_qs": "/more/search/{{int(1,10000)}}/?q={{str(1)}}&{{str(4)}}={{str(4)}}"
       }
+    },
+    {
+      "target": "https://cont.ws",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "from=0&to=0&a=0&s=%D0%A3%D0%BA%D1%80&next={{int(1,1000)}}",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Referer\": \"https://cont.ws/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
+        "path_qs": "/search.php",
+        "verb": "POST"
+      }
     }
   ]
 }
