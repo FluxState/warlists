@@ -31,6 +31,14 @@
       "options": {
         "path_qs": "/catalog/?q={{str(1)}}&PAGEN_2={{int(1,5)}}"
       }
+    },
+    {
+      "target": "https://dni.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://dni.ru/\"}",
+        "path_qs": "/more/search/{{int(1,10000)}}/?q={{str(1)}}&{{str(4)}}={{str(4)}}"
+      }
     }
   ]
 }
