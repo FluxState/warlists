@@ -9,6 +9,14 @@
       }
     },
     {
+      "target": "213.139.208.57:22",
+      "method": "TCP"
+    },
+    {
+      "target": "141.8.193.99:22",
+      "method": "TCP"
+    },
+    {
       "target": "https://www.m24.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
