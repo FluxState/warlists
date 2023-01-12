@@ -10,6 +10,14 @@
     },
     {
       "target": "https://mail.hoffmann-group.ru:9443",
+      "method": "GET",
+      "options": {
+        "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
+        "path_qs": "/cart"
+      }
+    },
+    {
+      "target": "https://mail.hoffmann-group.ru:9443",
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
