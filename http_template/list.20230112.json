@@ -1,0 +1,36 @@
+{
+  "targets": [
+    {
+      "target": "https://haieronline.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://haieronline.ru/\"}",
+        "path_qs": "/search/?q={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://mail.hoffmann-group.ru:9443",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
+        "path_qs": "/search?q={{int(1,9)}}&limit=1000&offset={{int(0,1000)}}"
+      }
+    },
+    {
+      "target": "https://hoffmann-group.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
+        "path_qs": "/collection/all?order=descending_age&page={{int(1,1401)}}"
+      }
+    },
+    {
+      "target": "https://hoffmann-group.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
+        "path_qs": "/products_by_id/{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}}.json"
+      }
+    }
+  ]
+}
