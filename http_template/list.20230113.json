@@ -37,7 +37,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://www.metronews.ru/\"}",
-        "path_qs": "/search/page{{int(1,100)}}/?sw={{str(1)}}"
+        "path_qs": "/search/page{{int(1,1000)}}/?sw=%F0%EE%F1%F1%E8%FF"
       }
     },
     {
