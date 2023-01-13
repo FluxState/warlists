@@ -1,14 +1,6 @@
 {
   "targets": [
     {
-      "target": "https://haieronline.ru",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "headers": "{\"Referer\": \"https://haieronline.ru/\"}",
-        "path_qs": "/search/?q={{str(1)}}"
-      }
-    },
-    {
       "target": "https://mail.hoffmann-group.ru:9443",
       "method": "GET",
       "options": {
@@ -38,6 +30,22 @@
       "options": {
         "headers": "{\"Referer\": \"https://hoffmann-group.ru/\"}",
         "path_qs": "/products_by_id/{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}},{{int(162532719,313854181)}}.json"
+      }
+    },
+    {
+      "target": "https://www.metronews.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.metronews.ru/\"}",
+        "path_qs": "/search/page{{int(1,100)}}/?sw={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://www.mid.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.mid.ru/\"}",
+        "path_qs": "/ru/search/?PAGEN_1={{int(1,1000)}}&q={{str(1)}}&sort=rele&lang=ru&order=desc&count=10&"
       }
     }
   ]
