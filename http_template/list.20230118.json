@@ -25,13 +25,6 @@
         "headers": "{\"Referer\": \"https://novorosinform.org/\"}",
         "path_qs": "/ajax/loadmore?page={{int(1,10000)}}&category="
       }
-    },
-    {
-      "target": "https://novorossiia.ru",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "path_qs": "/page/{{int(1,100)}}?s={{str(1)}}"
-      }
     }
   ]
 }
