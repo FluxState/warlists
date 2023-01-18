@@ -1,13 +1,11 @@
 {
   "targets": [
     {
-      "target": "https://modshairrussia.ru",
+      "target": "https://mymodshair.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "body": "-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"name\"\n\n{{str(6)}}\n-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"phone\"\n\n+7 (495) 625-{{int(1,9)}}{{int(1,9)}}-{{int(1,9)}}{{int(1,9)}}\n-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"subject\"\n\nTotal look\n-----------------------------17097944912524891368454341740--\n",
-        "headers": "{\"Content-Type\": \"multipart/form-data; boundary=---------------------------17097944912524891368454341740\", \"Referer\": \"https://modshairrussia.ru/\", \"X-Requested-With\": \"X-Requested-With\"}",
-        "path_qs": "/send",
-        "verb": "POST"
+        "headers": "{\"Cookie\": \"rerf=AAAAAGPHz1K//wvYAyGzAg==; ipp_uid=1674039122111/clN9oh1CpuePefHV/VgPreAw0iAOfAFi36HZVew==; ipp_key=v1674039122111/v33947245ba5adc7a72e273/4DmqpyXtPZJopwVKzsBvnQ==; _ym_uid=1674039123878600664; _ym_d=1674039123; _ga=GA1.2.482610164.1674039123; _gid=GA1.2.2045940345.1674039123; _gat_gtag_UA_140520909_2=1; _ym_isad=2; _ym_visorc=w; _gat=1; tildauid=1674039124971.154387; tildasid=1674039124971.761700; previousUrl=mymodshair.ru%2F\", \"Referer\": \"https://mymodshair.ru/\"}",
+        "path_qs": "/"
       }
     },
     {
