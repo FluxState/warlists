@@ -4,8 +4,20 @@
       "target": "https://nvo.ng.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Referer\": \"https://nvo.ng.ru/\"}",
-        "path_qs": "/search/?q=%D0%A0%D0%BE%D1%81%D1%81&s=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA&PAGEN_1={{int(1,300)}}&{{str(4)}}={{str(4)}}"
+        "body": "sessid=2f1e68c3a3ea87f2cb70882b0283174f&data%5B0%5D%5Bcontainer%5D=bx_favorite_NEWS_{{int(1,757952)}}_{{int(1,2314)}}&data%5B0%5D%5Btype%5D=NEWS&data%5B0%5D%5Bid%5D={{int(1,757952)}}&data%5B0%5D%5Bparam1%5D=IBLOCK&data%5B0%5D%5Bparam2%5D=22&action=init_favorite&url=%2Fajax%2Fajax_handler.php&backurl=%2Fnews%2F{{int(1,757952)}}.html",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Referer\": \"https://nvo.ng.ru/\"}",
+        "path_qs": "/ajax/ajax_handler.php",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://www.ng.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "sessid=e8b45d646e30f7557ad628b57a5b7ebc&data%5B0%5D%5Bcontainer%5D=bx_favorite_NEWS_{{int(1,757952)}}_{{int(1,2314)}}&data%5B0%5D%5Btype%5D=NEWS&data%5B0%5D%5Bid%5D={{int(1,757952)}}&data%5B0%5D%5Bparam1%5D=IBLOCK&data%5B0%5D%5Bparam2%5D=22&action=init_favorite&url=%2Fajax%2Fajax_handler.php&backurl=%2Fnews%2F{{int(1,757952)}}.html",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded; charset=UTF-8\", \"Referer\": \"https://www.ng.ru/\"}",
+        "path_qs": "/ajax/ajax_handler.php",
+        "verb": "POST"
       }
     },
     {
