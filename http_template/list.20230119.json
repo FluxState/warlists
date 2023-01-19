@@ -1,0 +1,32 @@
+{
+  "targets": [
+    {
+      "target": "https://nvo.ng.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://nvo.ng.ru/\"}",
+        "path_qs": "/search/?q=%D0%A0%D0%BE%D1%81%D1%81&s=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA&PAGEN_1={{int(1,300)}}&{{str(4)}}={{str(4)}}"
+      }
+    },
+    {
+      "target": "https://plainnews.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "feedID=0&type=-1&date_start=2023-01-19+17%3A20%3A29&date_end=2023-01-01+00%3A01%3A35&direction=old",
+        "headers": "{\"Referer\": \"https://plainnews.ru/\"}",
+        "path_qs": "/eto?ft=-1",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://politcentr.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "do=search&subaction=search&search_start={{int(1,5)}}&full_search=0&result_from={{int(1,41)}}&story=%D0%B5%D1%82%D0%BE%D0%BC",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://politcentr.ru/\"}",
+        "path_qs": "/index.php?do=search",
+        "verb": "POST"
+      }
+    }
+  ]
+}
