@@ -4,10 +4,18 @@
       "target": "https://polit.info",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "body": "{\"query\":\"ето\",\"options\":{\"full\":true,\"limit\":{{int(1,1000)}},\"offset\":int(,\"maxDate\":1663693142,\"type\":\"byDate\",\"days\":\"365\",\"categories\":[],\"fields\":[\"title\",\"data\"]}}",
+        "body": "{\"query\":\"ето\",\"options\":{\"full\":true,\"limit\":{{int(1,1000)}},\"offset\":{{int(1,1000)}},\"maxDate\":{{int(1600000000,1674419771)}},\"type\":\"byDate\",\"days\":\"365\",\"categories\":[],\"fields\":[\"title\",\"data\"]}}",
         "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://polit.info\"}",
         "path_qs": "/html/searchPosts/render/",
         "verb": "POST"
+      }
+    },
+    {
+      "target": "http://ru-an.info",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"http://ru-an.info/\"}",
+        "path_qs": "/search_page.php?rubric=0&f_word=%EE%F2&F_save=%CD%E0%E9%F2%E8&sort=0&start_month=0&start_year=2008&end_month=8&end_year=2022"
       }
     },
     {
