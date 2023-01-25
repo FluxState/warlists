@@ -13,14 +13,14 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://slovodel.com/category/glavnye-novosti\"}",
-        "path_qs": "/html/getListLenta/render/{{int(1660000000,1664376397)}}/-1/category"
+        "path_qs": "/html/getListLenta/render/{{int(1600000000,1674652937)}}/-1/category"
       }
     },
     {
       "target": "https://slovodel.com",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "body": "{\"query\":\"a е\",\"options\":{\"full\":true,\"limit\":10,\"offset\":{{int(1,1000)}},\"maxDate\":1662890030,\"type\":\"byDate\",\"days\":\"999\",\"categories\":[],\"fields\":[\"title\",\"data\"]}}",
+        "body": "{\"query\":\"{{str(1)}} {{str(1)}}\",\"options\":{\"full\":true,\"limit\":10,\"offset\":{{int(1,1000)}},\"maxDate\":\"\",\"type\":\"byDate\",\"days\":\"30\",\"categories\":[],\"fields\":[\"title\",\"data\"]}}",
         "headers": "{\"Content-Type\": \"application/json\", \"Referer\": \"https://slovodel.com/search\"}",
         "path_qs": "/html/searchPosts/render/",
         "verb": "POST"
