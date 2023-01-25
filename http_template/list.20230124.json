@@ -1,0 +1,12 @@
+{
+  "targets": [
+    {
+      "target": "https://projahn-rus.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://projahn-rus.ru/\"}",
+        "path_qs": "/api/items?s={{str(1)}}&skip=0&limit=0"
+      }
+    }
+  ]
+}
