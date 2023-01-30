@@ -1,14 +1,6 @@
 {
   "targets": [
     {
-      "target": "https://therussophile.org",
-      "method": "HTTP_TEMPLATE",
-      "options": {
-        "headers": "{\"Cookie\": \"xerone_dolphin=4869011675074935622; STACKSCALING=busybees5\", \"Referer\": \"https://therussophile.org/\"}",
-        "path_qs": "/page/{{int(1,100)}}/?s={{str(1)}}&tf-scroll=1"
-      }
-    },
-    {
       "target": "https://universe-tss.su",
       "method": "HTTP_TEMPLATE",
       "options": {

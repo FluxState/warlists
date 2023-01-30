@@ -51,7 +51,7 @@ https://svpressa.ru  # 429 Too Many Requests + drop
 https://swiss-krono.ru  # cookie
 https://taurica.net  # cf
 https://tehnowar.ru  # cf
-https://therussophile.org/?s=a
+https://therussophile.org
 https://thesaker.is
 https://trmzk.ru  # sw
 https://tsargrad.tv
