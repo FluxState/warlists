@@ -39,6 +39,6 @@
       "options": {
         "path_qs": "/search/site?q={{str(1)}}&page={{int(1,100)}}"
       }
-    },
+    }
   ]
 }
