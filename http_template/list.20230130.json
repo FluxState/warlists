@@ -12,10 +12,8 @@
       "target": "https://universe-tss.su",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "body": "login=submit&login_name=vladimir52&login_password=Vladimirovic%21%4022",
-        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://universe-tss.su/\"}",
-        "path_qs": "/",
-        "verb": "POST"
+        "headers": "{\"Referer\": \"https://universe-tss.su/\"}",
+        "path_qs": "/main/{{str(1)}}/{{str(1)}}/{{int(1,124644)-{{str(1)}}.html"
       }
     },
     {
