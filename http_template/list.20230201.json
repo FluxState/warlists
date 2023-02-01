@@ -12,7 +12,7 @@
       "method": "HTTP_TEMPLATE",
       "options": {
         "headers": "{\"Referer\": \"https://www.belarus.by/ru/press-center/news/\"}",
-        "path_qs": "/ru/press-center/news?&date={{int(1483225200,1669849200)}}"
+        "path_qs": "/ru/press-center/news?&date={{int(1483225200,1675206000)}}"
       }
     },
     {
