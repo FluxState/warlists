@@ -1,11 +1,26 @@
 {
   "targets": [
     {
-      "target": "https://api.360tv.ru",
+      "target": "https://argumenti.ru",
       "method": "HTTP_TEMPLATE",
       "options": {
-        "headers": "{\"Accept\": \"application/json, text/plain, */*\", \"Referer\": \"https://360tv.ru/\", \"X-Site\": \"360tv.ru\"}",
-        "path_qs": "/api/v1/client/articles/articles/?page={{int(1,1000)}}&search={{str(1)}}"
+        "path_qs": "/search/{{str(1)}}/{{int(1,10)}}"
+      }
+    },
+    {
+      "target": "https://www.belarus.by",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.belarus.by/ru/press-center/news/\"}",
+        "path_qs": "/ru/press-center/news?&date={{int(1483225200,1669849200)}}"
+      }
+    },
+    {
+      "target": "https://www.belarus.by",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.belarus.by/ru/press-center/news/\"}",
+        "path_qs": "/ru/press-center/news/?page={{int(1,153)}}&{{str(4)}}={{str(4)}}"
       }
     },
     {
