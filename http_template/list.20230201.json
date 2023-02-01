@@ -1,0 +1,19 @@
+{
+  "targets": [
+    {
+      "target": "https://api.360tv.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Accept\": \"application/json, text/plain, */*\", \"Referer\": \"https://360tv.ru/\", \"X-Site\": \"360tv.ru\"}",
+        "path_qs": "/api/v1/client/articles/articles/?page={{int(1,1000)}}&search={{str(1)}}"
+      }
+    },
+    {
+      "target": "https://www.belnovosti.by",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "path_qs": "/news?page={{int(1,15000)}}&{{str(8)}}={{str(8)}}"
+      }
+    }
+  ]
+}
